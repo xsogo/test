@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Image Slideshow</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="main-container">
-    <div class="slideshow-container">
-        <!-- Slides will be dynamically added here using JavaScript -->
-    </div>
-    <div id="myProgress">
-        <div id="myBar"></div>
-    </div>
-    <div class="controls-container">
-        <button class="controls prev" onclick="plusSlides(-1)">Previous</button>
-        <button class="controls pause" onclick="playPauseHandler()">Play/Pause</button>
-        <button class="controls next" onclick="plusSlides(1)">Next</button>
-        <button class="controls play-pressure" onclick="playPressure()">Pressure</button>
-        <button class="controls play-density" onclick="playDensity()">Density</button>
-    </div>
-    <div class="counter">
-        Site Visits: <span id="visit-count">Loading...</span>
-    </div>
-</div>
 
-<script src="script.js"></script>
+<body>
+    <div class="controls">
+        <button id="playPause">Play</button>
+        <input type="range" id="slider" min="0" max="99" value="0">
+        <button id="pressure">Pressure</button>
+        <button id="density">Density</button>
+    </div>
+    <img id="imageDisplay" src="" width="1867" height="1354" alt="图片展示">
+    <script src="script.js"></script>
 </body>
+
 </html>
