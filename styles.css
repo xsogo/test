@@ -12,6 +12,9 @@ body {
 #imageDisplay {
     max-width: 933.5px; /* 宽度的一半 */
     max-height: 677px; /* 高度的一半 */
+    /* 确保图片在小屏幕上不超过其容器宽度 */
+    width: 100%;
+    height: auto;
 }
 
 .controls {
@@ -37,3 +40,16 @@ body {
     max-width: 100%; /* 确保在小屏幕上不会超出屏幕宽度 */
 }
 
+/* 响应式设计：适应小屏幕 */
+@media screen and (max-width: 768px) { 
+    #imageDisplay {
+        /* 当屏幕小于768px时，设置图片的最大宽度为90% */
+        max-width: 90%; 
+    }
+    
+    /* 根据需要调整按钮大小或其他样式 */
+    .controls button {
+        padding: 10px 20px;  /* 增加填充以增大按钮大小 */
+        font-size: 16px;    /* 调整按钮上的文字大小 */
+    }
+}
