@@ -10,12 +10,21 @@
 
 <body>
     <div class="controls">
+        <!-- 播放暂停按钮 -->
         <button id="playPause">Play</button>
+        
+        <!-- 进度条滑块，用于展示和选择图片 -->
         <input type="range" id="slider" min="0" max="99" value="0">
+        
+        <!-- 选择pressure和density文件夹的按钮 -->
         <button id="pressure">Pressure</button>
         <button id="density">Density</button>
     </div>
+    
+    <!-- 用于展示图片的img标签 -->
     <img id="imageDisplay" src="" width="1867" height="1354" alt="图片展示">
+    
+    <!-- 引入JavaScript -->
     <script src="script.js"></script>
 </body>
 
