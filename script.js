@@ -5,8 +5,11 @@ var intervalDuration = 5000; // Interval between slide changes (milliseconds)
 
 // Add your image filenames to the arrays
 var pressureImages = [
-    "pressure1.png",
-    "pressure2.png",
+    "Pressure_xz-0000.png",
+    "Pressure_xz-0001.png",
+    "Pressure_xz-0002.png",
+    "Pressure_xz-0003.png",
+    "Pressure_xz-0004.png",
     // ... Add more images
 ];
 
