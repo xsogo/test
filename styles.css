@@ -22,6 +22,15 @@ body {
     justify-content: center;
 }
 
+.controls button {
+    width: 150px;  /* 设置宽度 */
+    height: 50px;  /* 设置高度 */
+}
+
+.controls button {
+    font-size: 20px;  /* 设置字体大小 */
+}
+
 /* 确保进度条长度合适 */
 #slider {
     width: 933.5px; /* 图片宽度的一半 */
