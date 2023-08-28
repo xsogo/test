@@ -14,8 +14,11 @@ var pressureImages = [
 ];
 
 var densityImages = [
-    "density1.png",
-    "density2.png",
+    "Density_xz-0000.png",
+    "Density_xz-0001.png",
+    "Density_xz-0002.png",
+    "Density_xz-0003.png",
+    "Density_xz-0004.png",
     // ... Add more images
 ];
 
