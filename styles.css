@@ -5,8 +5,25 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .controls {
     margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+#imageDisplay {
+    max-width: 933.5px; /* 宽度的一半 */
+    max-height: 677px; /* 高度的一半 */
+}
+
+/* 确保进度条长度合适 */
+#slider {
+    width: 933.5px; /* 图片宽度的一半 */
+    max-width: 100%; /* 确保在小屏幕上不会超出屏幕宽度 */
+}
+
