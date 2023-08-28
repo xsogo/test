@@ -4,8 +4,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    justify-content: space-between; /* 使内容之间有空间，从而将计数器推到底部 */
     background-color: #f4f4f4;
     padding: 20px;
+}
+
+#imageDisplay {
+    max-width: 933.5px; /* 宽度的一半 */
+    max-height: 677px; /* 高度的一半 */
 }
 
 .controls {
@@ -14,11 +20,6 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#imageDisplay {
-    max-width: 933.5px; /* 宽度的一半 */
-    max-height: 677px; /* 高度的一半 */
 }
 
 /* 确保进度条长度合适 */
