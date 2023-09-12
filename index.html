@@ -5,22 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <style>
-        /* 添加一些基本的样式 */
-        .image-container {
+        /* 基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            height: 100vh;  /* 使用视窗的高度 */
         }
-        img {
-            width: 200px;
+
+        .intro {
+            flex: 1;  /* 占据1/3的空间 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image-container {
+            flex: 2;  /* 占据2/3的空间 */
+            display: flex;
+        }
+
+        .image-container img {
+            flex: 1;  /* 4等分 */
+            max-width: 100%;
+            height: auto;
             cursor: pointer;
         }
+
+        /* 适配手机屏幕 */
+        @media (max-width: 600px) {
+            .intro, .image-container {
+                padding: 10px;
+            }
+            .image-container {
+                flex-direction: column;
+            }
+        }
+
+        /* 适配平板屏幕 */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .intro, .image-container {
+                padding: 15px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <!-- 上半部分的文字介绍 -->
     <div class="intro">
-        <h1>Welcome to My Website</h1>
-        <p>This is the introduction to my website's content.</p>
+        <div>
+            <h1>Welcome to My Website</h1>
+            <p>This is the introduction to my website's content.</p>
+        </div>
     </div>
 
     <!-- 下半部分的图片链接 -->
