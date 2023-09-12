@@ -26,12 +26,19 @@
         .image-container {
             flex: 2;  /* 占据2/3的空间 */
             display: flex;
+            justify-content: space-between;
         }
 
-        .image-container img {
-            flex: 1;  /* 4等分 */
-            max-width: 100%;
-            height: auto;
+        .image-box {
+            flex: 1;
+            padding: 5%;
+            box-sizing: border-box;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             cursor: pointer;
         }
 
@@ -65,10 +72,19 @@
 
     <!-- 下半部分的图片链接 -->
     <div class="image-container">
-        <img src="earth.png" alt="Image 1" onclick="window.location='page1.html'">
-        <img src="jupiter.png" alt="Image 2" onclick="window.location='page2.html'">
-        <img src="mars.png" alt="Image 3" onclick="window.location='page3.html'">
-        <img src="mercury.png" alt="Image 4" onclick="window.location='page4.html'">
+        <div class="image-box">
+            <img src="earth.png" alt="Image 1" onclick="window.location='page1.html'">
+        </div>
+        <div class="image-box">
+            <img src="jupiter.png" alt="Image 2" onclick="window.location='page2.html'">
+        </div>
+        <div class="image-box">
+            <img src="mars.png" alt="Image 3" onclick="window.location='page3.html'">
+        </div>
+        <div class="image-box">
+            <img src="mercury.png.jpg" alt="Image 4" onclick="window.location='page4.html'">
+        </div>
     </div>
 </body>
 </html>
+
