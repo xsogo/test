@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* 添加一些基本的样式 */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- 上半部分的文字介绍 -->
+    <div class="intro">
+        <h1>Welcome to My Website</h1>
+        <p>This is the introduction to my website's content.</p>
+    </div>
+
+    <!-- 下半部分的图片链接 -->
+    <div class="image-container">
+        <img src="earth.png" alt="Image 1" onclick="window.location='page1.html'">
+        <img src="jupiter.png" alt="Image 2" onclick="window.location='page2.html'">
+        <img src="mars.png" alt="Image 3" onclick="window.location='page3.html'">
+        <img src="mercury.png" alt="Image 4" onclick="window.location='page4.html'">
+    </div>
+</body>
+</html>
